@@ -1,9 +1,0 @@
-#!/usr/bin/expect
-
-set PASSWORD "abc"
-
-spawn	"scripts/rsync.sh"
-expect	"password:"
-send	"$PASSWORD\r"
-
-interact
